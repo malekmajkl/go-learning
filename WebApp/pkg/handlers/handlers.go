@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"github.com/malek.majkl/go-learning/WebApp/pkg/render"
 	"net/http"
+	"github.com/malekmajkl/go-learning/WebApp/pkg/render"
 )
 
 // Home is the home page handler

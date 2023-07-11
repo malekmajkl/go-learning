@@ -2,24 +2,23 @@ package main
 
 import (
 	"log"
-
-	"github.com/malek.majkl/go-learning/helpers"
+	"github.com/malekmajkl/go-learning/helpers"
 )
 
 const numPool = 1000
 
-func CalculateValue(intChan chan int)  {
+func CalculateValue(intChan chan int) {
 	// randomNumber := helpers.RandomNumber(numPool)
 	randomNumber := helpers.RandomNumber(numPool)
 	intChan <- randomNumber
 }
 
-func main()  {
+func main() {
 	intChan := make(chan int)
 	defer close(intChan)
 
 	go CalculateValue(intChan)
 
-	num := <- intChan
+	num := <-intChan
 	log.Println(num)
 }

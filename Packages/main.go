@@ -2,11 +2,10 @@ package main
 
 import (
 	"log"
-
-	"github.com/malek.majkl/go-learning/helpers"
+	"github.com/malekmajkl/go-learning/helpers"
 )
 
-func main()  {
+func main() {
 	log.Println("Hello")
 
 	var myVar helpers.SomeType
@@ -14,4 +13,3 @@ func main()  {
 	log.Println(myVar.TypeName)
 
 }
-

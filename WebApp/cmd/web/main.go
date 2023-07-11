@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/malek.majkl/go-learning/WebApp/pkg/handlers"
 	"fmt"
 	"net/http"
+	"github.com/malekmajkl/go-learning/WebApp/pkg/handlers"
 )
 
 const portNumber = ":8080"

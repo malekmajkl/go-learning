@@ -1,3 +1,3 @@
-module github.com/malek.majkl/go-learning
+module github.com/malekmajkl/go-learning
 
 go 1.16
